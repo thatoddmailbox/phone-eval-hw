@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:thingb-eval-hw-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -138,4 +138,19 @@ Text GLabel 2650 2500 3    39   Input ~ 0
 GND_OUT
 Wire Wire Line
 	2650 2250 2650 2200
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D69E1EF
+P 3350 1500
+F 0 "#FLG?" H 3350 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1673 50  0000 C CNN
+F 2 "" H 3350 1500 50  0001 C CNN
+F 3 "~" H 3350 1500 50  0001 C CNN
+	1    3350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1500 3350 1550
+Wire Wire Line
+	3350 1550 3100 1550
 $EndSCHEMATC
