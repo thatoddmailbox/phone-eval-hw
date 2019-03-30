@@ -18,6 +18,18 @@ K Dual N-Channel MOSFET
 F https://www.diodes.com/assets/Datasheets/DMN2029USD.pdf
 $ENDCMP
 #
+$CMP DW01
+D One Cell Lithium-ion/Polymer Battery Protection IC
+K battery protection li-ion li-po
+F http://www.haoyuelectronics.com/Attachment/TP4056-modules/DW01-P_DataSheet_V10.pdf
+$ENDCMP
+#
+$CMP DW01A
+D One Cell Lithium-ion/Polymer Battery Protection IC
+K battery protection li-ion li-po
+F https://datasheet.lcsc.com/szlcsc/1901091236_PUOLOP-DW01A_C351410.pdf
+$ENDCMP
+#
 $CMP ESP32-WROVER
 D RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD
 K RF Radio BT ESP ESP32 Espressif onboard PCB antenna
@@ -60,6 +72,12 @@ $CMP PCF8574ADGVR
 D 8 Bit Port/Expander to I2C Bus, TVSOP/TSSOP-20
 K I2C Expander
 F http://www.ti.com/lit/ds/symlink/pcf8574a.pdf
+$ENDCMP
+#
+$CMP RU8205G
+D Dual N-Channel Advanced Power MOSFET
+K Dual N-Channel MOSFET
+F https://datasheet.lcsc.com/szlcsc/Shenzhen-ruichips-Semicon-RU8205G_C238491.pdf
 $ENDCMP
 #
 $CMP XC6222B281MR-G
