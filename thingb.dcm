@@ -50,6 +50,10 @@ $CMP MCP73833
 F http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf
 $ENDCMP
 #
+$CMP NSI45015WT1G
+F https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NSI45015WT1G_C328096.pdf
+$ENDCMP
+#
 $CMP PCF8574A
 D 8 Bit Port/Expander to I2C Bus, DIP/SOIC-16
 K I2C Expander
