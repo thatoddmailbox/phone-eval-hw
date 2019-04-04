@@ -510,17 +510,6 @@ Wire Wire Line
 	1150 4200 1150 4250
 Wire Wire Line
 	1150 4000 1150 3950
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5C9A9A89
-P 850 4250
-F 0 "SW1" H 850 4575 50  0000 C CNN
-F 1 "SW_Push" H 850 4484 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 850 4250 50  0001 C CNN
-F 3 "~" H 850 4250 50  0001 C CNN
-	1    850  4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	650  4250 600  4250
 $Comp
@@ -588,7 +577,7 @@ U 1 1 5C9DD1E7
 P 2900 4600
 F 0 "SW2" H 2900 4925 50  0000 C CNN
 F 1 "SW_Push" H 2900 4834 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2900 4600 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 2900 4600 50  0001 C CNN
 F 3 "~" H 2900 4600 50  0001 C CNN
 	1    2900 4600
 	1    0    0    -1  
@@ -1808,5 +1797,16 @@ F 2 "Diode_SMD:D_SOD-123" H 9500 5550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NSI45015WT1G_C328096.pdf" H 9500 5550 50  0001 C CNN
 	1    9500 5550
 	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C9A9A89
+P 850 4250
+F 0 "SW1" H 850 4575 50  0000 C CNN
+F 1 "SW_Push" H 850 4484 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 850 4250 50  0001 C CNN
+F 3 "~" H 850 4250 50  0001 C CNN
+	1    850  4250
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
