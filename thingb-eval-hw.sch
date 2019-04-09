@@ -145,9 +145,9 @@ $EndComp
 NoConn ~ 1550 2900
 NoConn ~ 1550 3000
 Text GLabel 1700 2350 2    39   BiDi ~ 0
-USB_DM
+USB_D-
 Text GLabel 1700 2550 2    39   BiDi ~ 0
-USB_DP
+USB_D+
 Wire Wire Line
 	1650 2550 1700 2550
 Connection ~ 1650 2550
@@ -304,9 +304,9 @@ Wire Wire Line
 Wire Wire Line
 	2850 2750 2850 2700
 Text GLabel 2950 2950 0    39   BiDi ~ 0
-USB_DM
+USB_D-
 Text GLabel 2950 2850 0    39   BiDi ~ 0
-USB_DP
+USB_D+
 Wire Wire Line
 	2950 2850 3000 2850
 Wire Wire Line
@@ -1357,17 +1357,6 @@ NoConn ~ 5850 4000
 NoConn ~ 5850 4100
 NoConn ~ 6650 4100
 NoConn ~ 6650 4000
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5D00D675
-P 7950 1050
-F 0 "J3" H 7868 1367 50  0000 C CNN
-F 1 "Conn_01x04" H 7868 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7950 1050 50  0001 C CNN
-F 3 "~" H 7950 1050 50  0001 C CNN
-	1    7950 1050
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8150 950  8250 950 
 Wire Wire Line
@@ -1629,31 +1618,31 @@ Wire Wire Line
 	9200 4400 9200 4350
 Wire Wire Line
 	8850 4350 8850 4850
-Text GLabel 3750 3950 0    39   Output ~ 0
+Text GLabel 3550 4100 0    39   Output ~ 0
 JTAG_MTDO
-Text GLabel 3750 3750 0    39   Input ~ 0
+Text GLabel 3550 3900 0    39   Input ~ 0
 JTAG_MTCK
-Text GLabel 3750 3850 0    39   Input ~ 0
+Text GLabel 3550 4000 0    39   Input ~ 0
 JTAG_MTMS
-Text GLabel 3750 3650 0    39   Input ~ 0
+Text GLabel 3550 3800 0    39   Input ~ 0
 JTAG_MTDI
 Wire Wire Line
-	3750 3950 3800 3950
+	3550 4100 3600 4100
 Wire Wire Line
-	3800 3850 3750 3850
+	3600 4000 3550 4000
 Wire Wire Line
-	3750 3750 3800 3750
+	3550 3900 3600 3900
 Wire Wire Line
-	3750 3650 3800 3650
+	3550 3800 3600 3800
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L Connector_Generic:Conn_01x06 J2
 U 1 1 5D4CA230
-P 4000 3750
-F 0 "J2" H 3918 4067 50  0000 C CNN
-F 1 "Conn_01x04" H 3918 3976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4000 3750 50  0001 C CNN
-F 3 "~" H 4000 3750 50  0001 C CNN
-	1    4000 3750
+P 3800 3900
+F 0 "J2" H 4100 3950 50  0000 C CNN
+F 1 "Conn_01x06" H 4100 3850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3800 3900 50  0001 C CNN
+F 3 "~" H 3800 3900 50  0001 C CNN
+	1    3800 3900
 	1    0    0    -1  
 $EndComp
 Text GLabel 2550 6600 2    39   Output ~ 0
@@ -1809,4 +1798,60 @@ F 3 "~" H 850 4250 50  0001 C CNN
 	1    850  4250
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5D00D675
+P 7950 1150
+F 0 "J3" H 8250 1200 50  0000 C CNN
+F 1 "Conn_01x05" H 8250 1100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7950 1150 50  0001 C CNN
+F 3 "~" H 7950 1150 50  0001 C CNN
+	1    7950 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DC175EF
+P 8250 1400
+F 0 "#PWR0101" H 8250 1150 50  0001 C CNN
+F 1 "GND" H 8255 1227 50  0000 C CNN
+F 2 "" H 8250 1400 50  0001 C CNN
+F 3 "" H 8250 1400 50  0001 C CNN
+	1    8250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1350 8250 1350
+Wire Wire Line
+	8250 1350 8250 1400
+$Comp
+L power:GND #PWR0102
+U 1 1 5DC8B84C
+P 3550 4250
+F 0 "#PWR0102" H 3550 4000 50  0001 C CNN
+F 1 "GND" H 3555 4077 50  0000 C CNN
+F 2 "" H 3550 4250 50  0001 C CNN
+F 3 "" H 3550 4250 50  0001 C CNN
+	1    3550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4200 3550 4200
+Wire Wire Line
+	3550 4200 3550 4250
+$Comp
+L power:VDD #PWR0103
+U 1 1 5DCA34FE
+P 3550 3650
+F 0 "#PWR0103" H 3550 3500 50  0001 C CNN
+F 1 "VDD" H 3567 3823 50  0000 C CNN
+F 2 "" H 3550 3650 50  0001 C CNN
+F 3 "" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3700 3550 3700
+Wire Wire Line
+	3550 3700 3550 3650
 $EndSCHEMATC
