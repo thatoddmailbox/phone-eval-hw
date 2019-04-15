@@ -1179,9 +1179,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 6500 2550 6500
 Wire Wire Line
-	2550 6400 2450 6400
+	3350 6400 3250 6400
 Wire Wire Line
-	2450 6300 2550 6300
+	2450 6300 2950 6300
 Wire Wire Line
 	2450 6200 2550 6200
 Wire Wire Line
@@ -1449,9 +1449,9 @@ Text GLabel 3850 5400 0    39   Input ~ 0
 I2C_SCL
 Text GLabel 3850 5500 0    39   BiDi ~ 0
 I2C_SDA
-Text GLabel 2550 6300 2    39   Output ~ 0
+Text GLabel 3350 6300 2    39   Output ~ 0
 I2C_SCL
-Text GLabel 2550 6400 2    39   BiDi ~ 0
+Text GLabel 3350 6400 2    39   BiDi ~ 0
 I2C_SDA
 $Comp
 L power:GND #PWR021
@@ -1854,4 +1854,58 @@ Wire Wire Line
 	3600 3700 3550 3700
 Wire Wire Line
 	3550 3700 3550 3650
+$Comp
+L Device:R_Small_US R11
+U 1 1 5DDBAE04
+P 2950 6150
+F 0 "R11" H 3018 6196 50  0000 L CNN
+F 1 "10k" H 3018 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2950 6150 50  0001 C CNN
+F 3 "~" H 2950 6150 50  0001 C CNN
+	1    2950 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6300 2950 6250
+Connection ~ 2950 6300
+Wire Wire Line
+	2950 6300 3350 6300
+$Comp
+L power:VDD #PWR052
+U 1 1 5DE02908
+P 3100 5950
+F 0 "#PWR052" H 3100 5800 50  0001 C CNN
+F 1 "VDD" H 3117 6123 50  0000 C CNN
+F 2 "" H 3100 5950 50  0001 C CNN
+F 3 "" H 3100 5950 50  0001 C CNN
+	1    3100 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6050 2950 6000
+$Comp
+L Device:R_Small_US R20
+U 1 1 5DE1B8D1
+P 3250 6150
+F 0 "R20" H 3318 6196 50  0000 L CNN
+F 1 "10k" H 3318 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 6150 50  0001 C CNN
+F 3 "~" H 3250 6150 50  0001 C CNN
+	1    3250 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6400 3250 6250
+Connection ~ 3250 6400
+Wire Wire Line
+	3250 6400 2450 6400
+Wire Wire Line
+	2950 6000 3100 6000
+Wire Wire Line
+	3250 6000 3250 6050
+Wire Wire Line
+	3100 6000 3100 5950
+Connection ~ 3100 6000
+Wire Wire Line
+	3100 6000 3250 6000
 $EndSCHEMATC
