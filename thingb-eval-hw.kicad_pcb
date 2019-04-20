@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
+    (drawings 23)
     (tracks 1101)
     (zones 0)
     (modules 70)
@@ -3358,6 +3358,16 @@
     )
   )
 
+  (gr_line (start 121 86.25) (end 117 86.25) (layer F.SilkS) (width 0.12) (tstamp 5CBB4525))
+  (gr_line (start 121 103.5) (end 121 86.25) (layer F.SilkS) (width 0.12) (tstamp 5CBB4522))
+  (gr_line (start 117 103.5) (end 121 103.5) (layer F.SilkS) (width 0.12) (tstamp 5CBB451F))
+  (gr_line (start 117 86.25) (end 117 103.5) (layer F.SilkS) (width 0.12) (tstamp 5CBB451C))
+  (gr_text "rev A - 2019-04-20" (at 120 103.25 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
+  (gr_text thingb-eval-hw (at 118 103.25 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_text DBG_TXD (at 144 86.12) (layer F.SilkS) (tstamp 5CAC0589)
     (effects (font (size 1 1) (thickness 0.15)) (justify right))
   )
