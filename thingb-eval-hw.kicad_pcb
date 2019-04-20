@@ -3364,7 +3364,7 @@
   (gr_line (start 121 103.5) (end 121 86.25) (layer F.SilkS) (width 0.12) (tstamp 5CBB4522))
   (gr_line (start 117 103.5) (end 121 103.5) (layer F.SilkS) (width 0.12) (tstamp 5CBB451F))
   (gr_line (start 117 86.25) (end 117 103.5) (layer F.SilkS) (width 0.12) (tstamp 5CBB451C))
-  (gr_text "rev A - 2019-04-20" (at 120 103.25 90) (layer F.SilkS)
+  (gr_text "rev A - 2019-04-19" (at 120 103.25 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_text thingb-eval-hw (at 118 103.25 90) (layer F.SilkS)
